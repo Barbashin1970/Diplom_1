@@ -35,19 +35,19 @@ public class IngredientTest {
     }
 
     @Test
-    public void getTypeReturnCorrectType() {
+    public void getTypeReturnTrueType() {
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Тип ингредиента с ошибкой", type, ingredient.getType());
     }
 
     @Test
-    public void getNameReturnValidName() {
+    public void getNameReturnTrueName() {
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Название с ошибкой", name, ingredient.getName());
     }
 
     @Test
-    public void getPriceReturnCorrectPrice() {
+    public void getPriceReturnTruePrice() {
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Цена с ошибкой", price, ingredient.getPrice(), 0.0001f);
     }

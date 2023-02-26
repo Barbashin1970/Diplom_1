@@ -53,7 +53,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void getPriceBunReturnedCorrectPrice() {
+    public void getPriceBunReturnCorrectPrice() {
         Bun bun = Mockito.mock(Bun.class);
         Mockito.when(bun.getPrice()).thenReturn(100f);
         burger.setBuns(bun);
@@ -63,7 +63,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void ingredientCanBeMoved() {
+    public void ingredientCanMoved() {
         Ingredient ingredient = Mockito.mock(Ingredient.class);
         Ingredient newIngredient = Mockito.mock(Ingredient.class);
         Mockito.when(ingredient.getName()).thenReturn("Sauce");
@@ -83,7 +83,7 @@ public class BurgerTest {
         Mockito.when(ingredient.getPrice()).thenReturn(100f);
         burger.addIngredient(ingredient);
         Mockito.when(bun.getName()).thenReturn("black bun");
-        Mockito.when(bun.getPrice()).thenReturn(100F);
+        Mockito.when(bun.getPrice()).thenReturn(100f);
         burger.setBuns(bun);
         String expectedReceipt = String.format("(==== %s ====)%n", bun.getName()) +
                 String.format("= %s %s =%n",
