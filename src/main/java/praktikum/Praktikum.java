@@ -1,9 +1,9 @@
 package praktikum;
 
 import java.util.List;
-
+@Generated
 public class Praktikum {
-
+@Generated
     public static void main(String[] args) {
         // Инициализируем базу данных
         Database database = new Database();
