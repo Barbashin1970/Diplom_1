@@ -53,6 +53,14 @@ public class BurgerTest {
     }
 
     @Test
+    public void setBuns() {
+        Bun bun = Mockito.mock(Bun.class);
+        burger.setBuns(bun);
+        Bun actual = burger.bun;
+        assertEquals(bun, actual);
+    }
+
+    @Test
     public void getPriceBunReturnCorrectPrice() {
         Bun bun = Mockito.mock(Bun.class);
         Mockito.when(bun.getPrice()).thenReturn(100f);
