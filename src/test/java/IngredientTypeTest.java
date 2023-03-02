@@ -13,4 +13,5 @@ public class IngredientTypeTest {
     public void sauceNotNull() {
         assertNotNull("Соусы не указаны в ингредиентах", IngredientType.valueOf("SAUCE"));
     }
+
 }
