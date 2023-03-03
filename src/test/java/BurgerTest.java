@@ -7,9 +7,6 @@ import praktikum.Bun;
 import praktikum.Burger;
 import praktikum.Ingredient;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static praktikum.IngredientType.FILLING;
@@ -40,16 +37,6 @@ public class BurgerTest {
         int expectedResult = 0;
         burger.removeIngredient(0);
         assertEquals(expectedResult, burger.ingredients.size());
-    }
-
-    @Test
-    public void setBunsAddBuns() {
-        List<Bun> buns = new ArrayList<>();
-        Bun bun = Mockito.mock(Bun.class);
-        burger.setBuns(bun);
-        buns.add(bun);
-        buns.add(bun);
-        assertEquals("Должно быть 2 булки", 2, buns.size());
     }
 
     @Test
