@@ -10,7 +10,7 @@ public class Database {
 
     private final List<Bun> buns = new ArrayList<>();
     private final List<Ingredient> ingredients = new ArrayList<>();
-
+@Generated
     public Database() {
         buns.add(new Bun("black bun", 100));
         buns.add(new Bun("white bun", 200));
@@ -24,11 +24,11 @@ public class Database {
         ingredients.add(new Ingredient(IngredientType.FILLING, "dinosaur", 200));
         ingredients.add(new Ingredient(IngredientType.FILLING, "sausage", 300));
     }
-
+@Generated
     public List<Bun> availableBuns() {
         return buns;
     }
-
+@Generated
     public List<Ingredient> availableIngredients() {
         return ingredients;
     }
